@@ -1,10 +1,15 @@
-import { View, Text } from "react-native";
+import { View, Text, ScrollView, SafeAreaView } from "react-native";
 import { CardComponent } from "./src/components/CardComponent";
+import { CarCardComponent } from "./src/components/CarCardComponent";
 
 export default function App() {
   return (
     <>
-      <CardComponent />
+      <SafeAreaView />
+      <ScrollView>
+        <CardComponent />
+        <CarCardComponent />
+      </ScrollView>
     </>
   );
 }
